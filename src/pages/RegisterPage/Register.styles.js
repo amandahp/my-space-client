@@ -5,7 +5,7 @@ export const Register = styled.main`
     max-width: 100%;
     overflow-y: hidden;
     display: flex;
-    
+
     column-gap: 3rem;
     .left{
       width: 50%;

@@ -3,6 +3,7 @@ module.exports = {
     es6: true,
     node: true,
   },
+  parser: "babel-eslint",
   extends: ["airbnb-base", "prettier"],
   plugins: ["prettier"],
   globals: {
@@ -23,6 +24,9 @@ module.exports = {
     "consistent-return": "off",
     "no-console": "off",
     "func-names": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
     sole: "off",
   },
 };

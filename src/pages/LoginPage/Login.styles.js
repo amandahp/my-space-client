@@ -5,7 +5,7 @@ export const Login = styled.main`
     max-width: 100%;
     overflow-y: hidden;
     display: flex;
-    
+
     column-gap: 3rem;
     .left{
       max-width: 50%;
@@ -30,7 +30,7 @@ export const Login = styled.main`
       text-align: center;
       font-size: 14px;
       font-weight: 300;
-      
+
     }
 
     .rigth img{
