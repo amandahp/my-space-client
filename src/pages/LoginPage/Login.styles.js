@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Register = styled.main`
+export const Login = styled.main`
   ${(props) => `
     max-width: 100%;
     overflow-y: hidden;
@@ -8,7 +8,7 @@ export const Register = styled.main`
     
     column-gap: 3rem;
     .left{
-      width: 50%;
+      max-width: 50%;
     }
     .left img {
       max-width: 100%;
@@ -30,10 +30,15 @@ export const Register = styled.main`
       text-align: center;
       font-size: 14px;
       font-weight: 300;
+      
     }
 
     .rigth img{
       width: 250px;
+    }
+
+    .rigth h1 {
+      padding-top: 70px;
     }
 
     .ref-login {

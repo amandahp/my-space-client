@@ -6,7 +6,7 @@ export const RegisterPage = () => {
     <S.Register>
       <div className="left">
         <img src="/images/background.png" alt="background black and purple" />
-        <h1 className="slogan">Find everything you need <br />in one place</h1>
+        <h1 className="slogan">Organize your tasks <br />in one place</h1>
       </div>
       <div className="rigth">
         <h1>

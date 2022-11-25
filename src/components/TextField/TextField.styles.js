@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const TextField = styled.div`
   ${(props) => `
@@ -13,4 +13,4 @@ export const TextField = styled.div`
       border-radius: 10px;
     }
   `}
-`
+`;
