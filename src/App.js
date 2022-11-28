@@ -1,8 +1,12 @@
-import * as P from "./pages";
+import { BrowserRouter, Routes } from "react-router-dom";
+import buildRoutes from "./routes/Router";
+
 const App = () => {
   return (
-    <P.LoginPage />
+    <BrowserRouter>
+      <Routes>{buildRoutes()}</Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

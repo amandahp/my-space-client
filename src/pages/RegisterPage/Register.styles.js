@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Register = styled.main`
   ${(props) => `
-    max-width: 100%;
+    width: 100%;
     overflow-y: hidden;
     display: flex;
 
