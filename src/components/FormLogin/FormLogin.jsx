@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
 
 import { loginApi } from "../../services/auth";
 import * as C from "../index";
@@ -7,20 +8,21 @@ import * as S from "./FormLogin.styles";
 export const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [cookies, setCookie] = useCookies();
 
   const onSave = async (e) => {
     e.preventDefault();
     try {
       const payload = { email, password };
-      setEmail("");
-      setPassword("");
 
-      await loginApi(payload);
+      const response = await loginApi(payload);
+      setCookie("token", response.data.token);
 
       setEmail("");
       setPassword("");
     } catch (err) {
-      console.log(err);
+      setError(err.response.data.error);
     }
   };
 
@@ -43,6 +45,7 @@ export const FormLogin = () => {
           width="100%"
           required
         />
+        {error && <C.ToastError error={error} setError={setError} />}
         <C.Button primary={true} fullButton={true}>
           Log In
         </C.Button>
