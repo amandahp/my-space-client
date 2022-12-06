@@ -34,6 +34,7 @@ export const Register = styled.main`
 
     .rigth img{
       width: 250px;
+      margin: 50px 0px 0px 0px;
     }
 
     .ref-login {
