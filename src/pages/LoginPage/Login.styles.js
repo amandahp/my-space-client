@@ -22,6 +22,7 @@ export const Login = styled.main`
       top: 60%;
       left: 40px;
       color: ${props.theme.color.white};
+
     }
     .rigth{
       width: 50%;
@@ -45,6 +46,7 @@ export const Login = styled.main`
       font-size: 14px;
       font-weight: 700;
       color: ${props.theme.color.purple};
+      margin: 20px 0px;
     }
 
     h2{

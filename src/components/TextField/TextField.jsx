@@ -2,14 +2,14 @@ import * as S from "./TextField.styles";
 
 export const TextField = (props) => {
   const {
-    placeholder,
-    value,
-    setValue,
+    placeholder = "",
+    value = "",
+    setValue = "",
     width = "100%",
-    required,
+    required = false,
     type = "text",
-    className,
-    paddingLeft,
+    className = "",
+    paddingLeft = "",
   } = props;
 
   const handleChange = (e) => {

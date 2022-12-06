@@ -40,6 +40,7 @@ export const Register = styled.main`
       font-size: 14px;
       font-weight: 700;
       color: ${props.theme.color.purple};
+      margin: 20px 0;
     }
 
     h2{
