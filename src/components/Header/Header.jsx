@@ -1,14 +1,19 @@
 import { useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
+
 import * as S from "./Header.styles";
 
 export const Header = () => {
   const navigate = useNavigate();
+  const [cookie, setCookie, removeCookie] = useCookies(["token"]);
 
   const handleProfile = () => {
     navigate("/profile");
   };
 
-  const handleLogout = () => {};
+  const handleLogout = () => {
+    removeCookie("token");
+  };
 
   const handleMySpace = () => {
     navigate("/my-space");

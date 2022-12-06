@@ -5,9 +5,7 @@ export const MySpacePage = () => {
   return (
     <>
       <Header />
-      <S.Main>
-
-      </S.Main>
+      <S.Main></S.Main>
     </>
   );
 };
