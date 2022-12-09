@@ -10,6 +10,7 @@ export const TextField = (props) => {
     type = "text",
     className = "",
     paddingLeft = "",
+    disabled = false,
   } = props;
 
   const handleChange = (e) => {
@@ -19,6 +20,7 @@ export const TextField = (props) => {
   return (
     <S.TextField width={width} paddingLeft={paddingLeft}>
       <input
+        disabled={disabled}
         onChange={handleChange}
         type={type}
         value={value}

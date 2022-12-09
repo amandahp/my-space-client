@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useCookies } from "react-cookie";
+import { useDispatch } from "react-redux";
+import { setUser } from "../../redux/userSlice";
+import { useNavigate } from "react-router-dom";
 
 import { loginApi } from "../../services/auth";
 import * as C from "../index";
@@ -10,6 +13,8 @@ export const FormLogin = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [cookies, setCookie] = useCookies();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const onSave = async (e) => {
     e.preventDefault();
@@ -17,10 +22,14 @@ export const FormLogin = () => {
       const payload = { email, password };
 
       const response = await loginApi(payload);
+      const { user } = response.data;
+
+      dispatch(setUser(user));
       setCookie("token", response.data.token);
 
       setEmail("");
       setPassword("");
+      navigate("/my-space");
     } catch (err) {
       setError(err.response.data.error);
     }

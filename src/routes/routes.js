@@ -1,11 +1,26 @@
 import { Navigate } from "react-router-dom";
 import { LoginPage, RegisterPage, MySpacePage, ProfilePage } from "../pages";
+import { PrivateRoute } from "./PrivateRoute";
 
 const routes = [
   { path: "/register", element: <RegisterPage /> },
   { path: "/login", element: <LoginPage /> },
-  { path: "/my-space", element: <MySpacePage /> },
-  { path: "/profile", element: <ProfilePage /> },
+  {
+    path: "/my-space",
+    element: (
+      <PrivateRoute>
+        <MySpacePage />
+      </PrivateRoute>
+    ),
+  },
+  {
+    path: "/profile",
+    element: (
+      <PrivateRoute>
+        <ProfilePage />
+      </PrivateRoute>
+    ),
+  },
   { path: "*", element: <Navigate to="/login" replace /> },
 ];
 

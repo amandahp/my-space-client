@@ -13,6 +13,7 @@ export const Header = () => {
 
   const handleLogout = () => {
     removeCookie("token");
+    navigate("/login");
   };
 
   const handleMySpace = () => {
