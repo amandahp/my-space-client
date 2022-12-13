@@ -6,6 +6,7 @@ const defaultValues = {
     headerColor: "#575a96",
     white: "#FFFFFF",
     black: "#000000",
+    blue: "#3179BA",
   },
 };
 

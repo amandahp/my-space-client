@@ -25,7 +25,7 @@ export const LoginPage = () => {
           <img src="/images/logo.png" alt="logo my space" />
         </h1>
         <h3>
-          Don't have an account?
+          Don't have an account?&nbsp;
           <button className="ref-login" onClick={handleClick}>
             SIGN UP
           </button>

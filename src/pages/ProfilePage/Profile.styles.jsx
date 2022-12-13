@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Profile = styled.main`
   ${(props) => `
     overflow-x:hidden ;
-    background-color: ${props.theme.color.bgColor} ;
-    width: 100vw;
-    height: 100vh ;
+    background-color: ${props.theme.color.blue} ;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

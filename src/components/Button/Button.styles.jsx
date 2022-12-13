@@ -15,5 +15,9 @@ export const Button = styled.button`
     font-size: 16px;
     padding: 18px;
     border-radius: 10px;
+
+    &:hover{
+      opacity: 0.9 ;
+    }
   `}
 `;

@@ -44,23 +44,21 @@ export const FormRegister = () => {
   return (
     <S.Form>
       <form onSubmit={onSave}>
-        <div className="name-field">
-          <C.TextField
-            placeholder="First Name"
-            value={firstName}
-            className="name"
-            setValue={(value) => setFirstName(value)}
-            required
-            width="100%"
-          />
-          <C.TextField
-            placeholder="Last Name"
-            value={lastName}
-            setValue={(value) => setLastName(value)}
-            width="100%"
-            required
-          />
-        </div>
+        <C.TextField
+          placeholder="First Name"
+          value={firstName}
+          className="name"
+          setValue={(value) => setFirstName(value)}
+          required
+          width="100%"
+        />
+        <C.TextField
+          placeholder="Last Name"
+          value={lastName}
+          setValue={(value) => setLastName(value)}
+          width="100%"
+          required
+        />
         <div className="country-field">
           <C.TextField
             placeholder="Country"

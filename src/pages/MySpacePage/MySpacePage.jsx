@@ -3,15 +3,13 @@ import { Header } from "../../components";
 import * as S from "./MySpace.styles";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import Board from 'react-trello'
+import Board from 'react-trello';
 import { useCookies } from "react-cookie";
 
 export const MySpacePage = () => {
   const {userId} = useSelector(state => state.userReducer)
   const [columns, setColumns] = useState({lanes:[]})
   const [cookie, setCookie, removeCookie] = useCookies(["token"]);
-  console.log(userId)
-
 
   const fetchColumns = async() => {
     try {
@@ -49,8 +47,6 @@ export const MySpacePage = () => {
       console.log(e)
     }
   }
-
-  console.log(columns)
 
   const onClickNewCard = async(card, laneId) => {
     try {

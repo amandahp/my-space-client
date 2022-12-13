@@ -9,21 +9,13 @@ export const Form = styled.section`
       width: 60%;
       background-color: ${props.theme.color.white};
     }
-    .name-field{
-      display: flex;
-      column-gap: 5rem;
-      width: 100%;
-      height: 70px;
-      justify-content: space-between ;
-    }
-
     .country-field{
       display: flex;
       column-gap: 4rem;
       width: 100%;
       height: 70px;
+      margin-bottom: 70px ;
       justify-content: space-between ;
-
     }
     button{
       margin: 16px 0;

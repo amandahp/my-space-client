@@ -4,7 +4,7 @@ export const Header = styled.header`
   ${(props) => `
     background-color: ${props.theme.color.headerColor};
     height: 70px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,10 @@ export const Header = styled.header`
       font-size: 12px;
     }
 
+    .logout:hover{
+      opacity: 0.9;
+    }
+
     .myProfile{
       padding: 20px;
       background-color:${props.theme.color.white};
@@ -36,12 +40,20 @@ export const Header = styled.header`
       font-size: 12px;
     }
 
+    .myProfile:hover{
+      opacity: 0.9;
+    }
+
     .mySpace{
       padding: 20px;
       background-color:${props.theme.color.headerColor};
       border-radius: 12px;
       color: #fff;
       font-size: 16px;
+    }
+
+    .mySpace:hover{
+      opacity: 0.9;
     }
 
   `}
