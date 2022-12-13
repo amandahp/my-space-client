@@ -22,9 +22,9 @@ export const FormLogin = () => {
       const payload = { email, password };
 
       const response = await loginApi(payload);
-      const { user } = response.data;
+      const { user, userId } = response.data;
 
-      dispatch(setUser(user));
+      dispatch(setUser({user, userId}));
       setCookie("token", response.data.token);
 
       setEmail("");
