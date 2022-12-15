@@ -9,7 +9,7 @@ export const Profile = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: ${props.theme.color.purple};
+    color: ${props.theme.color.white};
     h1 {
       margin: 30px 0;
     }
