@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import React from 'react'
+
 
 import * as S from "./Register.styles";
 import * as C from "../../components";

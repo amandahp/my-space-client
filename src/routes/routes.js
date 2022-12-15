@@ -1,6 +1,7 @@
 import { Navigate } from "react-router-dom";
 import { LoginPage, RegisterPage, MySpacePage, ProfilePage } from "../pages";
 import { PrivateRoute } from "./PrivateRoute";
+import React from 'react'
 
 const routes = [
   { path: "/register", element: <RegisterPage /> },

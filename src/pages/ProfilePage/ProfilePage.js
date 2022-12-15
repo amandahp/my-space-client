@@ -1,6 +1,8 @@
 import { Header } from "../../components";
 import * as S from "./Profile.styles";
 import { FormProfile, Card } from "../../components";
+import React from 'react'
+
 
 export const ProfilePage = () => {
   return (
