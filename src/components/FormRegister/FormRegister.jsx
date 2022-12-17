@@ -59,7 +59,7 @@ export const FormRegister = () => {
           width="100%"
           required
         />
-        <div className="country-field">
+        {/* <div className="country-field">
           <C.TextField
             placeholder="Country"
             value={country}
@@ -74,7 +74,7 @@ export const FormRegister = () => {
             width="100%"
             required
           />
-        </div>
+        </div> */}
         <C.TextField
           type="email"
           placeholder="E-mail"
